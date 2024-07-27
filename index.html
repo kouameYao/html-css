@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meilleurs Services Informatiques - Tech Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.8;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        box-sizing: border-box;
+      }
+      .navbar .logo {
+        flex: 1;
+      }
+      .navbar .nav-links {
+        display: flex;
+        /* flex: 1; */
+        justify-content: center;
+        margin: 0;
+      }
+      .navbar .nav-links a {
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navbar .nav-links a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .navbar .contact-btn {
+        flex: 1;
+        text-align: right;
+      }
+      .navbar .contact-btn a {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .navbar .contact-btn a:hover {
+        background-color: #45a049;
+      }
+      .header {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://images.pexels.com/photos/1181245/pexels-photo-1181245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); /* Remplacé par une image de Pexels */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+      }
+      .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .section {
+        text-align: center;
+      }
+      .services {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+      .service {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 30%;
+        box-sizing: border-box;
+      }
+      .service img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .a-propos-content {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 70px;
+      }
+      .a-propos-content img {
+        width: 45%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .a-propos-content .text {
+        width: 45%;
+        text-align: left;
+      }
+      .contact {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .contact .container {
+        width: 40%;
+        min-width: 300px;
+      }
+      .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .contact-info ul {
+        list-style: none;
+        padding: 0;
+      }
+      .contact-info ul li {
+        margin: 10px 0;
+      }
+      .contact input,
+      .contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .footer {
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#accueil"
+          ><img src="https://via.placeholder.com/50" alt="Logo" height="50"
+        /></a>
+      </div>
+      <div class="nav-links">
+        <a href="#accueil"><i class="material-icons">home</i> Accueil</a>
+        <a href="#services"><i class="material-icons">build</i> Nos Services</a>
+        <a href="#a-propos"><i class="material-icons">info</i> À propos</a>
+        <a href="#contact"><i class="material-icons">mail</i> Contact</a>
+      </div>
+      <div class="contact-btn">
+        <a href="#contact"
+          ><i class="material-icons">phone</i> Contactez-Nous</a
+        >
+      </div>
+    </div>
+
+    <div id="accueil" class="header section">
+      <div class="header-content">
+        <h1>Tech Solutions</h1>
+        <p>Vos services informatiques à portée de main</p>
+      </div>
+    </div>
+
+    <div id="services" class="section">
+      <h2>Nos Services</h2>
+      <div class="services">
+        <div class="service">
+          <img
+            src="https://images.pexels.com/photos/1181357/pexels-photo-1181357.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Développement Web"
+          />
+          <h3>Développement Web</h3>
+          <p>
+            Création de sites web modernes et responsives pour tous types
+            d'entreprises.
+          </p>
+        </div>
+        <div class="service">
+          <img
+            src="https://images.pexels.com/photos/1181336/pexels-photo-1181336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Support Technique"
+          />
+          <h3>Support Technique</h3>
+          <p>
+            Assistance technique 24/7 pour résoudre tous vos problèmes
+            informatiques.
+          </p>
+        </div>
+        <div class="service">
+          <img
+            src="https://images.pexels.com/photos/1181267/pexels-photo-1181267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Consulting IT"
+          />
+          <h3>Consulting IT</h3>
+          <p>
+            Conseils et stratégies pour optimiser vos systèmes informatiques.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="a-propos" class="section">
+      <h2>À propos</h2>
+      <div class="a-propos-content">
+        <img
+          src="https://images.pexels.com/photos/1181232/pexels-photo-1181232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="À propos de nous"
+        />
+        <div class="text">
+          <p>
+            Chez Tech Solutions, notre vision est de créer un avenir où la
+            technologie n'est pas seulement un outil, mais un catalyseur pour
+            l'innovation et la croissance. Nous croyons fermement que chaque
+            entreprise, quelle que soit sa taille, mérite d'accéder aux
+            meilleurs services informatiques pour atteindre ses objectifs. Notre
+            mission est de fournir des solutions personnalisées, fiables et à la
+            pointe de la technologie pour aider nos clients à exceller dans un
+            monde numérique en constante évolution.
+          </p>
+          <p>
+            Avec une équipe d'experts passionnés et dévoués, nous nous engageons
+            à offrir un service exceptionnel et à établir des partenariats
+            durables basés sur la confiance et la satisfaction. Ensemble, nous
+            construisons un avenir meilleur, un projet à la fois.
+          </p>
+          <p>
+            <strong>Alassane Kouadio, Directeur Général</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact section">
+      <div class="container">
+        <h2>Contactez-Nous</h2>
+        <div class="contact-info">
+          <p>
+            <strong>Adresse :</strong> 123 Rue de la Tech, 00000 Abidjan, Côte
+            d'Ivoire
+          </p>
+          <p><strong>Téléphone :</strong> +225 01 23 45 67</p>
+          <p><strong>Boîte postale :</strong> BP 12345</p>
+          <p><strong>Horaires d'ouverture :</strong></p>
+          <ul>
+            <li>Lundi - Vendredi : 9h00 - 18h00</li>
+            <li>Samedi : 10h00 - 14h00</li>
+            <li>Dimanche : Fermé</li>
+          </ul>
+        </div>
+        <form
+          action="mailto:info@techsolutions.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Nom :</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email :</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Message :</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br />
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Tech Solutions. Tous droits réservés.</p>
+    </div>
+  </body>
+</html>
